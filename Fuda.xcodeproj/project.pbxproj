@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4340211C5E475200C29FF1 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4340201C5E475200C29FF1 /* UIBarButtonItemExtension.swift */; };
+		0E4340231C5E546A00C29FF1 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4340221C5E546A00C29FF1 /* UIButtonExtension.swift */; };
 		0E81F47A1C5E3FE80020107D /* Fuda.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E81F4791C5E3FE80020107D /* Fuda.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E81F4811C5E3FE80020107D /* Fuda.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E81F4761C5E3FE80020107D /* Fuda.framework */; };
 		0E81F4861C5E3FE80020107D /* FudaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81F4851C5E3FE80020107D /* FudaTests.swift */; };
+		0E81F4C51C5E434D0020107D /* BadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E81F4C41C5E434D0020107D /* BadgeLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4340201C5E475200C29FF1 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
+		0E4340221C5E546A00C29FF1 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		0E81F4761C5E3FE80020107D /* Fuda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fuda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E81F4791C5E3FE80020107D /* Fuda.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fuda.h; sourceTree = "<group>"; };
 		0E81F47B1C5E3FE80020107D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E81F4801C5E3FE80020107D /* FudaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FudaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E81F4851C5E3FE80020107D /* FudaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FudaTests.swift; sourceTree = "<group>"; };
 		0E81F4871C5E3FE80020107D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E81F4C41C5E434D0020107D /* BadgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				0E81F4791C5E3FE80020107D /* Fuda.h */,
 				0E81F47B1C5E3FE80020107D /* Info.plist */,
+				0E81F4C41C5E434D0020107D /* BadgeLabel.swift */,
+				0E4340201C5E475200C29FF1 /* UIBarButtonItemExtension.swift */,
+				0E4340221C5E546A00C29FF1 /* UIButtonExtension.swift */,
 			);
 			path = Fuda;
 			sourceTree = "<group>";
@@ -194,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4340211C5E475200C29FF1 /* UIBarButtonItemExtension.swift in Sources */,
+				0E81F4C51C5E434D0020107D /* BadgeLabel.swift in Sources */,
+				0E4340231C5E546A00C29FF1 /* UIButtonExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
