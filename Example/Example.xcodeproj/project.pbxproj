@@ -14,6 +14,30 @@
 		0E81F4A71C5E41A20020107D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E81F4A51C5E41A20020107D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0E81F4BC1C5E42440020107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E81F4B71C5E42440020107D /* Fuda.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E81F4761C5E3FE80020107D;
+			remoteInfo = Fuda;
+		};
+		0E81F4BE1C5E42440020107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E81F4B71C5E42440020107D /* Fuda.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E81F4801C5E3FE80020107D;
+			remoteInfo = FudaTests;
+		};
+		0E81F4C01C5E42560020107D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E81F4B71C5E42440020107D /* Fuda.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E81F4751C5E3FE70020107D;
+			remoteInfo = Fuda;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0E81F4991C5E41A20020107D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E81F49C1C5E41A20020107D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +46,7 @@
 		0E81F4A31C5E41A20020107D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E81F4A61C5E41A20020107D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E81F4A81C5E41A20020107D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E81F4B71C5E42440020107D /* Fuda.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Fuda.xcodeproj; path = ../Fuda.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +63,7 @@
 		0E81F4901C5E41A20020107D = {
 			isa = PBXGroup;
 			children = (
+				0E81F4B71C5E42440020107D /* Fuda.xcodeproj */,
 				0E81F49B1C5E41A20020107D /* Example */,
 				0E81F49A1C5E41A20020107D /* Products */,
 			);
@@ -64,6 +90,15 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
+		0E81F4B81C5E42440020107D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E81F4BD1C5E42440020107D /* Fuda.framework */,
+				0E81F4BF1C5E42440020107D /* FudaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +113,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0E81F4C11C5E42560020107D /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -110,12 +146,35 @@
 			mainGroup = 0E81F4901C5E41A20020107D;
 			productRefGroup = 0E81F49A1C5E41A20020107D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0E81F4B81C5E42440020107D /* Products */;
+					ProjectRef = 0E81F4B71C5E42440020107D /* Fuda.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0E81F4981C5E41A20020107D /* Example */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0E81F4BD1C5E42440020107D /* Fuda.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Fuda.framework;
+			remoteRef = 0E81F4BC1C5E42440020107D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0E81F4BF1C5E42440020107D /* FudaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FudaTests.xctest;
+			remoteRef = 0E81F4BE1C5E42440020107D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0E81F4971C5E41A20020107D /* Resources */ = {
@@ -141,6 +200,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E81F4C11C5E42560020107D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Fuda;
+			targetProxy = 0E81F4C01C5E42560020107D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0E81F4A01C5E41A20020107D /* Main.storyboard */ = {
@@ -251,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.matsuda.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = me.matsuda.Fuda.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -262,7 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.matsuda.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = me.matsuda.Fuda.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
